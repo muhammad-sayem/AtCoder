@@ -18,7 +18,6 @@ int main()
 {
     fastIO;
 
-    cout << "Test" << endl;
 
     return 0;
 }
