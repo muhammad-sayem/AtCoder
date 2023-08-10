@@ -2,28 +2,23 @@
 using namespace std;
 int main()
 {
-    int test;
-    cin >> test;
-    cin.ignore();
+    int a, b, i;
+    cin >> a >> b;
 
-    while(test--){
-        string s1, s2;
-        cin >> s1 >> s2;
-        int i, j;
-        bool flag = false;
+    int minn = min(a, b);
+    int maxx = max(a, b);
 
-        for(i=0; i<s1.size(); i++){
-            for(j=0; j<s2.size(); j++){
-                if(s1[i] == s2[j]){
-                  flag = true;
-                  break;
-                }
-            }
+    if(a != b){
+        for(i=1; i<=maxx; i++){
+          cout << minn;
         }
-
-        if(flag) cout << "Yes" << endl;
-        else cout << "No" << endl;
     }
-  
+
+    else{
+        for(i=1; i<=a; i++){
+          cout << a;
+        }
+    }
+    
     return 0;
 }
